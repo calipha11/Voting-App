@@ -11,7 +11,7 @@ var express = require("express"),
     
 var url = process.env.DATABASEURL || "mongodb://localhost/voting_app";
 mongoose.connect(url);  
-    
+
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));

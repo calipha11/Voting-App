@@ -1,9 +1,8 @@
 <% include partials/header %>
 
 <div class="container">
-    <p>home page</p>
-    <a href="/quiz1">quiz 1</a>
-    
+    <h1>Polls</h1>
+
     <ul class="list-group">
         <% quizzes.forEach(function(quiz){ %>
             <a class="list-group-item" href="/quiz/<%= quiz._id %>"><%= quiz.name %></a>
